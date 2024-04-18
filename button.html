@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Materialize Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/1716856bfa.js" crossorigin="anonymous"></script>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link rel="stylesheet" href="style.css">
+    <title>Buttons</title>
+</head>
+<body>
+    
+    <h1 class="center pink-text text-darken-1">Buttons</h1>
+    <div class="divider"></div>
+    <div class="container">
+        <p>There are 3 main button types described in material design. The raised button is a standard button that signify actions and seek to give depth to a mostly flat page. The floating circular action button is meant for very important functions. Flat buttons are usually used within elements that already have depth like cards or modals.</p>
+
+        <h3 class="pink-text text-darken-1">Raised</h3>
+        <a class="pink waves-effect waves-light btn">button</a>
+        <a class="waves-effect waves-light btn">
+            <i class="material-icons left">cloud</i>button
+        </a>
+        <a class="green waves-effect waves-light btn">
+            <i class="material-icons right">cloud</i>button
+        </a>
+        <br>
+        <h3 class="pink-text text-darken-1">Floating</h3>
+        <a class="red btn-floating btn-large waves-effect waves-light">
+            <i class="material-icons">add</i>
+        </a>
+        <br>
+        <p class="flow-text">Floating Action Button</p>
+        <p>See the documentation on <a href="https://materializecss.com/floating-action-button.html" target="_blank">this page</a>.
+        </p>
+        <br>
+        <h3 class="pink-text text-darken-1">Flat</h3>
+        <p>Flat buttons are used to reduce excessive layering. For example, flat buttons are usually used for actions within a card or modal so there aren't too many overlapping shadows.</p>
+        <a class="waves-effect waves-light btn-flat">Button</a>
+        <br>
+        <h3 class="pink-text text-darken-1">Submit Button</h3>
+        <p>When you use a button to submit a form, instead of using a input tag, use a button tag with a type submit</p>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+        </button>
+        <br>
+        <h3 class="pink-text text-darken-1">Large Buttons</h3>
+        <p>This button has a larger height for buttons that need more attention.</p>
+        <a class="pink waves-effect waves-light btn-large">button</a>
+        <a class="waves-effect waves-light btn-large">
+            <i class="material-icons left">cloud</i>button
+        </a>
+        <a class="green waves-effect waves-light btn-large">
+            <i class="material-icons right">cloud</i>button
+        </a>
+        <br>
+        <h3 class="pink-text text-darken-1">Small Buttons</h3>
+        <p>When mouse and keyboard are the primary input methods, this smaller button is useful for denser UI layouts.</p>
+        <a class="pink waves-effect waves-light btn-small">button</a>
+        <a class="waves-effect waves-light btn-small">
+            <i class="material-icons left">cloud</i>button
+        </a>
+        <a class="green waves-effect waves-light btn-small">
+            <i class="material-icons right">cloud</i>button
+        </a>
+        <br>
+        <h3 class="pink-text text-darken-1">Disabled</h3>
+        <p>This style can be applied to all button types</p>
+        <a class="btn-large disabled">Button</a>
+        <a class="btn disabled">Button</a>
+        <a class="btn-flat disbled">Button</a>
+        <a class="btn-floating disabled">
+            <i class="material-icons">add</i>
+        </a>
+    </div>
+
+    <br>
+    <h1 class="pink-text text-darken-1 center">Floating Action Button</h1>
+    <div class="divider"></div>
+    <div class="container">
+        <p>If you want a fixed floating action button, you can add multiple actions that will appear on hover. Our demo is in the bottom righthand corner of the page.</p>
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large pink">
+                <i class="material-icons">mode_edit</i>
+            </a>
+            <ul>
+                <li>
+                    <a href="tables-image.html" class="btn-floating red" target="_blank">
+                      <i class="material-icons">insert_chart</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="colors-typography.html" class="btn-floating blue" target="_blank">
+                        <i class="material-icons">format_quote</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="sidenav-navbar.html" class="btn-floating green" target="_blank">
+                    <i class="material-icons">publish</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    <div style="height: 1000px;"></div>
+     <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script>
+        $(document).ready(function(){
+        $('.fixed-action-btn').floatingActionButton({
+            direction: 'left',
+            hoverEnabled: false	
+        });
+        });
+     </script>
+</body>
+</html>

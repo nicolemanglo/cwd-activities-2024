@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/1716856bfa.js" crossorigin="anonymous"></script>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Date and Time Picker</title>
+</head>
+<body>
+    
+    <h1 class="pink-text text-darken-1 center">Pickers</h1>
+    <div class="divider"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6 l6">
+                <h3 class="pink-text text-darken-1">Date Picker</h3>
+                <p>The datepicker allows users to select a date from an interactive calendar.</p>
+                <form action="">
+                    <div class="input-field">
+                        <input type="text" class="datepicker">
+                        <label for="date">Birthdate</label>
+                    </div>
+                </form>
+            </div>
+            <div class="col s12 m6 l6">
+                <h3 class="pink-text text-darken-1">Time Picker</h3>
+                <p>The timepicker allows users to select a date from an interactive clock.
+                </p>
+                <form action="">
+                    <div class="input-field">
+                        <input type="text" class="timepicker">
+                        <label for="time">Party time</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script>
+        $(document).ready(function(){
+            //date picker
+        $ ('.datepicker').datepicker();
+            //time picker
+        $('.timepicker').timepicker();
+        });
+     </script>
+</body>
+</html>
